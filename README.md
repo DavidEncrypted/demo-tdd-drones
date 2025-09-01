@@ -1,6 +1,6 @@
 # TDD Demo: Drone Flight Data Analysis
 
-A simplified demonstration of Test-Driven Development using Claude Code with drone flight log analysis.
+A basic demonstration of Test-Driven Development using Claude Code with drone flight log analysis.
 
 ## Architecture
 
@@ -11,7 +11,7 @@ A simplified demonstration of Test-Driven Development using Claude Code with dro
 ## Components
 
 - **Data Loading**: PX4 ULog file reader
-- **Processing**: DuckDB for fast analytics
+- **Processing**: DuckDB
 - **Visualization**: Streamlit dashboard with basic plotting
 
 ## Setup
@@ -21,8 +21,8 @@ A simplified demonstration of Test-Driven Development using Claude Code with dro
 uv sync --group dev
 
 # Run the dashboard
-streamlit run app.py
+uv run streamlit run app.py
 
 # Run tests
-pytest
+uv run pytest
 ```
