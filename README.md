@@ -18,10 +18,13 @@ A basic demonstration of Test-Driven Development using Claude Code with drone fl
 
 ```bash
 # Install dependencies
-uv sync --group dev
+uv sync
 
 # Run the dashboard
 uv run streamlit run app.py
+
+# Test the demo file:
+# In the dashboard open the demo .ulg file : <path_to_this_dir>/data/longflight.ulg
 
 # Run tests
 uv run pytest

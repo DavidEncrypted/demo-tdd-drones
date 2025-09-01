@@ -171,9 +171,3 @@ with st.container():
     with col3:
         st.metric("X Field", f"{x_topic}.{x_field}")
 
-    # Future timeline container (prepared for timeline scrubber)
-    timeline_container = st.container()
-    with timeline_container:
-        st.markdown("---")
-        # Placeholder for future timeline component
-        st.write("Timeline component will be added here")
