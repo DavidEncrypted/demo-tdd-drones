@@ -69,11 +69,7 @@ class ULogReader(reader.Reader):
         self._ulog = core.ULog(str(robolog_path), parse_header_only=False)
         self._metadata = _metadata_from_ulog(self._ulog)
 
-        try:
-            self._start_seconds, self._end_seconds = _start_and_end_seconds_from_gps(self._ulog)
-        except Exception:
-            self._start_seconds = self._ulog.start_timestamp / 1e6
-            self._end_seconds = self._ulog.last_timestamp / 1e6
+        self._start_seconds, self._end_seconds = _start_and_end_seconds_from_gps(self._ulog)
 
     @property
     def metadata(self) -> dict[str, Any]:

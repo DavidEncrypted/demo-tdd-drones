@@ -15,7 +15,7 @@ A basic demonstration of Test-Driven Development using Claude Code with drone fl
 - **Visualization**: Streamlit dashboard with basic plotting
 
 ## Setup
-
+Run the following commands in a terminal window that is opened to this folder
 ```bash
 # Install dependencies
 uv sync
